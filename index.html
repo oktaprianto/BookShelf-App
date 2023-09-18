@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookshelf App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Bookshelf">
+        <h1>Bookshelf</h1>
+        <div class="search">
+            <input type="text" id="search-input" placeholder="Cari judul buku...">
+        </div>
+    </header>
+    <div class="container">
+        <div class="bookshelf">
+            <div class="shelf" id="unfinished-shelf">
+                <h2>Belum Selesai Dibaca</h2>
+                <ul></ul>
+            </div>
+            <div class="shelf" id="finished-shelf">
+                <h2>Selesai Dibaca</h2>
+                <ul></ul>
+            </div>
+        </div>
+        <div class="add-book">
+            <h2>Tambah Buku</h2>
+            <form id="add-book-form">
+                <input type="text" id="title" placeholder="Judul Buku" required>
+                <input type="text" id="author" placeholder="Penulis" required>
+                <input type="number" id="year" placeholder="Tahun Terbit" required>
+                <label for="isComplete">Selesai Dibaca</label>
+                <input type="checkbox" id="isComplete">
+                <button type="submit">Tambah Buku</button>
+            </form>
+        </div>
+        
+    </div>
+     
+    <footer>
+        <p>&copy; 2023 Okta Prianto</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
